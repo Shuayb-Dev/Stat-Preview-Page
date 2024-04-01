@@ -9,16 +9,18 @@ body {
 
 .informationContainer {
   background-color: hsl(244, 38%, 16%);
-  width: 1000px;
+  width: 900px;
   height: auto;
   display: flex;
   flex-direction: row;
+  border-radius: 10px;
 }
 
 .mainInformation {
   width: 50%;
   position: relative;
-  left: 100px;
+  left: 50px;
+  padding-top: 20px;
 }
 
 .mainInformation h1 {
@@ -30,6 +32,14 @@ body {
   color: hsl(277, 64%, 61%);
 }
 
+.mainInformation p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 20px;
+}
+
 .imageContainer {
   margin: 0px;
   padding: 0px;
@@ -37,4 +47,31 @@ body {
   background-image: url(imgs/image-header-desktop.jpg);
   background-color: hsl(277, 64%, 61%);
   background-blend-mode: multiply;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.secondaryInformation {
+  display: flex;
+  flex-direction: row;
+}
+
+.tagOne,
+.tagTwo,
+.tagThree {
+  padding: 10px;
+}
+
+.tagOne h4,
+.tagTwo h4,
+.tagThree h4 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.tagOne p,
+.tagTwo p,
+.tagThree p {
+  font-weight: 200;
+  position: relative;
+  bottom: 20px;
 }
