@@ -7,6 +7,14 @@ body {
   overflow: hidden;
 }
 
+.mobileHeader {
+  display: none;
+}
+
+.mobileimg {
+  display: none;
+}
+
 .informationContainer {
   background-color: hsl(244, 38%, 16%);
   width: 900px;
@@ -74,4 +82,72 @@ body {
   font-weight: 200;
   position: relative;
   bottom: 20px;
+}
+
+@media screen and (max-width: 885px) {
+  body {
+    overflow: scroll;
+  }
+
+  .mobileimg {
+    height: 300px;
+    width: 100%;
+    display: block;
+    background-image: url(imgs/image-header-mobile.jpg);
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+  }
+
+  .informationContainer {
+    background-color: hsl(244, 38%, 16%);
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .mainInformation {
+    position: relative;
+    left: 80px;
+
+    width: 200px;
+  }
+
+  .mainInformation h1,
+  .mainInformation br {
+    display: none;
+  }
+
+  .mobileHeader {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .mobileHeader h2 {
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  .mainInformation p {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+
+  .secondaryInformation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tagOne h4,
+  .tagTwo h4,
+  .tagThree h4 {
+    position: relative;
+    left: 70px;
+    font-size: 1.5rem;
+    margin: 0px;
+  }
 }
