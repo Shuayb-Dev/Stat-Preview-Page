@@ -17,6 +17,17 @@ body {
 
 .mainInformation {
   width: 50%;
+  position: relative;
+  left: 100px;
+}
+
+.mainInformation h1 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.mainInformation span {
+  color: hsl(277, 64%, 61%);
 }
 
 .imageContainer {
